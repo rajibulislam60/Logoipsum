@@ -11,7 +11,7 @@ $primary: #5e3bee;
 $secondary: #394149;
 $black: #282938;
 $hercolor: #006b6a;
-$thirdcolor: #1C1E53;
+$thirdcolor: #1c1e53;
 
 @mixin button($bg: White, $color) {
   font-size: 1.3rem;
@@ -23,6 +23,22 @@ $thirdcolor: #1C1E53;
   border-radius: 5px;
   padding: 18px 30px;
 }
+@mixin title {
+  h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 150%;
+    color: $black;
+    margin-bottom: 1.3rem;
+  }
+  h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 120%;
+    color: $black;
+    // margin-bottom: 106px;
+  }
+}
 
 // variables
 // mixin
@@ -30,61 +46,246 @@ $thirdcolor: #1C1E53;
 header {
   nav {
     background: white;
-    box-shadow: 0 5.33px 80px rgba(0,0,0, .1);
+    box-shadow: 0 5.33px 80px rgba(0, 0, 0, 0.1);
     padding: 20px 0;
-    ul{
-        gap: 40px;
-        li{
-            font-size: 1.3rem;
-            color: $thirdcolor;
-            &:hover a{
-                color: $primary !important;
-            }
-            
+    ul {
+      gap: 40px;
+      li {
+        font-size: 1.3rem;
+        color: $thirdcolor;
+        &:hover a {
+          color: $primary !important;
         }
-        
+      }
     }
     .navBtn {
-        @include button( transparent, $primary);
+      @include button(transparent, $primary);
     }
   }
 }
-main{
-    #bannar{
-        padding: 119px 0;
-        .bannar__area{
-            
-            h3{
-                font-size: 1.3rem;
-                font-weight: 600;
-                line-height: 150%;
-                color: $black;
-            }
-            h1{
-                font-size: 74px;
-                font-weight: 700;
-                line-height: 120%;
-                color: $black;
-                max-width: 790px;
-                margin-top: 20px;
-                span{
-                    color: $primary;
-                }
-            }
-            p{
-                font-size: 1.5rem;
-                font-weight: 400;
-                line-height: 150%;
-                color: $thirdcolor;
-                max-width: 620px;
-                margin-top: 20px;
-                margin-bottom: 40px;
-            }
-            .bannarBtn{
-                @include button($primary, white )
-            }
+main {
+  #bannar {
+    padding: 119px 0;
+    background: #f5fcff;
+    .bannar__area {
+      .img__area {
+        img {
+          max-width: 100% !important;
         }
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 150%;
+        color: $black;
+      }
+      h1 {
+        font-size: 74px;
+        font-weight: 700;
+        line-height: 120%;
+        color: $black;
+        max-width: 790px;
+        margin-top: 20px;
+        span {
+          color: $primary;
+        }
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 150%;
+        color: $thirdcolor;
+        max-width: 620px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+      .bannarBtn {
+        @include button($primary, white);
+      }
     }
+  }
+  #contant {
+    padding: 150px 0;
+    background: #ecfffd;
+    .title {
+      @include title;
+      margin-bottom: 106px;
+    }
+    .contant__area {
+      gap: 40px;
+      .contant__item {
+        &:hover {
+          box-shadow: 0px 10px 3px 0px rgba(94, 59, 238, 1);
+        }
+        padding: 32px;
+        h3 {
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: 140%;
+          color: $black;
+          margin-bottom: 1.3rem;
+        }
+        p {
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 150%;
+          color: $thirdcolor;
+          max-width: 340px;
+        }
+      }
+    }
+  }
+  #about {
+    padding: 133px 0;
+    .about__area {
+      img {
+        max-width: 100%;
+      }
+      .about__text__area {
+        @include title;
+        margin-bottom: 106px;
+        .first__pera {
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 150%;
+          color: $thirdcolor;
+          max-width: 840px;
+        }
+        .second__pera {
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 150%;
+          color: $thirdcolor;
+          max-width: 840px;
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+  #portfolio {
+    padding: 150px 0;
+    background: #ecfffd;
+    .portfolio__area {
+      .portfolio__title {
+        display: flex;
+        justify-content: space-between;
+        .title {
+          @include title;
+          margin-bottom: 106px;
+        }
+        .port__btn {
+          button {
+            .dribbbleicon {
+              margin-right: 10px;
+            }
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 150%;
+            color: #ffffff;
+            background: #e62872;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+          }
+        }
+      }
+      .portfolio__item {
+        .portfolio__body {
+          padding: 2rem;
+          .portfolio__title {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 140%;
+            color: $black;
+          }
+          .portfolio__text {
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 150%;
+            color: $thirdcolor;
+            margin-top: 12px;
+          }
+          .portfolio__item__Btn {
+            margin-top: 2rem;
+            a {
+              font-size: 19px;
+              font-weight: 600;
+              line-height: 150%;
+              color: $black;
+              text-decoration: none;
+
+              &:hover {
+                color: $primary;
+                box-shadow: 0px 10px 3px 0px rgba(94, 59, 238, 1);
+              }
+              .arrowicon {
+                margin-left: 10px;
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #testimonial {
+    padding: 197px;
+    .testimonial___title {
+      @include title;
+      margin-bottom: 106px;
+    }
+    .testimonial__item {
+      padding: 42px;
+      border: 1px solid #006b6a;
+      border-radius: 0.5rem;
+      ul {
+        li {
+          font-size: 26px;
+          color: #006b6a;
+        }
+      }
+      p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 150%;
+        color: $thirdcolor;
+        margin-top: 42px;
+        max-width: 470px;
+      }
+      .testimonial__avatar {
+        margin-top: 42px;
+        .avatar__text {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+  #contact {
+    padding: 100px;
+    .contact___title {
+      @include title;
+      text-align: center;
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 150%;
+        color: $thirdcolor;
+        margin-top: 32px;
+      }
+      margin-bottom: 64px;
+    }
+    .palaceholder__item {
+      form{
+        text-align: center;
+        .form-control {
+        border: 1px solid black;
+      }
+      .check__point{
+        border: 1px solid;
+      }
+    }
+      }
+      
+  }
 }
-
-

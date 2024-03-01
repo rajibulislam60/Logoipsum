@@ -18,7 +18,7 @@ header nav ul {
 }
 header nav ul li {
   font-size: 1.3rem;
-  color: #1C1E53;
+  color: #1c1e53;
 }
 header nav ul li:hover a {
   color: #5e3bee !important;
@@ -36,6 +36,10 @@ header nav .navBtn {
 
 main #bannar {
   padding: 119px 0;
+  background: #f5fcff;
+}
+main #bannar .bannar__area .img__area img {
+  max-width: 100% !important;
 }
 main #bannar .bannar__area h3 {
   font-size: 1.3rem;
@@ -58,7 +62,7 @@ main #bannar .bannar__area p {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 150%;
-  color: #1C1E53;
+  color: #1c1e53;
   max-width: 620px;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -72,4 +76,233 @@ main #bannar .bannar__area .bannarBtn {
   background: #5e3bee;
   border-radius: 5px;
   padding: 18px 30px;
+}
+main #contant {
+  padding: 150px 0;
+  background: #ecfffd;
+}
+main #contant .title {
+  margin-bottom: 106px;
+}
+main #contant .title h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #282938;
+  margin-bottom: 1.3rem;
+}
+main #contant .title h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #282938;
+}
+main #contant .contant__area {
+  gap: 40px;
+}
+main #contant .contant__area .contant__item {
+  padding: 32px;
+}
+main #contant .contant__area .contant__item:hover {
+  box-shadow: 0px 10px 3px 0px rgb(94, 59, 238);
+}
+main #contant .contant__area .contant__item h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 140%;
+  color: #282938;
+  margin-bottom: 1.3rem;
+}
+main #contant .contant__area .contant__item p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #1c1e53;
+  max-width: 340px;
+}
+main #about {
+  padding: 133px 0;
+}
+main #about .about__area img {
+  max-width: 100%;
+}
+main #about .about__area .about__text__area {
+  margin-bottom: 106px;
+}
+main #about .about__area .about__text__area h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #282938;
+  margin-bottom: 1.3rem;
+}
+main #about .about__area .about__text__area h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #282938;
+}
+main #about .about__area .about__text__area .first__pera {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #1c1e53;
+  max-width: 840px;
+}
+main #about .about__area .about__text__area .second__pera {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #1c1e53;
+  max-width: 840px;
+  margin-top: 1.5rem;
+}
+main #portfolio {
+  padding: 150px 0;
+  background: #ecfffd;
+}
+main #portfolio .portfolio__area .portfolio__title {
+  display: flex;
+  justify-content: space-between;
+}
+main #portfolio .portfolio__area .portfolio__title .title {
+  margin-bottom: 106px;
+}
+main #portfolio .portfolio__area .portfolio__title .title h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #282938;
+  margin-bottom: 1.3rem;
+}
+main #portfolio .portfolio__area .portfolio__title .title h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #282938;
+}
+main #portfolio .portfolio__area .portfolio__title .port__btn button {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #ffffff;
+  background: #e62872;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+main #portfolio .portfolio__area .portfolio__title .port__btn button .dribbbleicon {
+  margin-right: 10px;
+}
+main #portfolio .portfolio__area .portfolio__item .portfolio__body {
+  padding: 2rem;
+}
+main #portfolio .portfolio__area .portfolio__item .portfolio__body .portfolio__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 140%;
+  color: #282938;
+}
+main #portfolio .portfolio__area .portfolio__item .portfolio__body .portfolio__text {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #1c1e53;
+  margin-top: 12px;
+}
+main #portfolio .portfolio__area .portfolio__item .portfolio__body .portfolio__item__Btn {
+  margin-top: 2rem;
+}
+main #portfolio .portfolio__area .portfolio__item .portfolio__body .portfolio__item__Btn a {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 150%;
+  color: #282938;
+  text-decoration: none;
+}
+main #portfolio .portfolio__area .portfolio__item .portfolio__body .portfolio__item__Btn a:hover {
+  color: #5e3bee;
+  box-shadow: 0px 10px 3px 0px rgb(94, 59, 238);
+}
+main #portfolio .portfolio__area .portfolio__item .portfolio__body .portfolio__item__Btn a .arrowicon {
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+main #testimonial {
+  padding: 197px;
+}
+main #testimonial .testimonial___title {
+  margin-bottom: 106px;
+}
+main #testimonial .testimonial___title h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #282938;
+  margin-bottom: 1.3rem;
+}
+main #testimonial .testimonial___title h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #282938;
+}
+main #testimonial .testimonial__item {
+  padding: 42px;
+  border: 1px solid #006b6a;
+  border-radius: 0.5rem;
+}
+main #testimonial .testimonial__item ul li {
+  font-size: 26px;
+  color: #006b6a;
+}
+main #testimonial .testimonial__item p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #1c1e53;
+  margin-top: 42px;
+  max-width: 470px;
+}
+main #testimonial .testimonial__item .testimonial__avatar {
+  margin-top: 42px;
+}
+main #testimonial .testimonial__item .testimonial__avatar .avatar__text {
+  margin-left: 0.5rem;
+}
+main #contact {
+  padding: 100px;
+}
+main #contact .contact___title {
+  text-align: center;
+  margin-bottom: 64px;
+}
+main #contact .contact___title h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #282938;
+  margin-bottom: 1.3rem;
+}
+main #contact .contact___title h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #282938;
+}
+main #contact .contact___title p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #1c1e53;
+  margin-top: 32px;
+}
+main #contact .palaceholder__item form {
+  text-align: center;
+}
+main #contact .palaceholder__item form .form-control {
+  border: 1px solid black;
+}
+main #contact .palaceholder__item form .check__point {
+  border: 1px solid;
 }/*# sourceMappingURL=style.css.map */
